@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0620A55A05D9C09FE6973724 /* Pods_GoldPriceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3DFFD51DE6F9EA050614C5 /* Pods_GoldPriceApp.framework */; };
 		8BDA279325BECD8F0067E2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA279225BECD8F0067E2CA /* AppDelegate.swift */; };
 		8BDA279525BECD8F0067E2CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA279425BECD8F0067E2CA /* SceneDelegate.swift */; };
 		8BDA279725BECD8F0067E2CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA279625BECD8F0067E2CA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D74405918A77E2AFE36BF8A /* Pods-GoldPriceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldPriceApp.release.xcconfig"; path = "Target Support Files/Pods-GoldPriceApp/Pods-GoldPriceApp.release.xcconfig"; sourceTree = "<group>"; };
 		8BDA278F25BECD8F0067E2CA /* GoldPriceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldPriceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDA279225BECD8F0067E2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDA279425BECD8F0067E2CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		8BDA279B25BECD900067E2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BDA279E25BECD900067E2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BDA27A025BECD900067E2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3DFFD51DE6F9EA050614C5 /* Pods_GoldPriceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldPriceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E567DA541CD2FA1A5DE57090 /* Pods-GoldPriceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldPriceApp.debug.xcconfig"; path = "Target Support Files/Pods-GoldPriceApp/Pods-GoldPriceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0620A55A05D9C09FE6973724 /* Pods_GoldPriceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795451605196DEAFA3C58BD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E567DA541CD2FA1A5DE57090 /* Pods-GoldPriceApp.debug.xcconfig */,
+				0D74405918A77E2AFE36BF8A /* Pods-GoldPriceApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		80C9FD673ED1845F1D741EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF3DFFD51DE6F9EA050614C5 /* Pods_GoldPriceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BDA278625BECD8F0067E2CA = {
 			isa = PBXGroup;
 			children = (
 				8BDA279125BECD8F0067E2CA /* GoldPriceApp */,
 				8BDA279025BECD8F0067E2CA /* Products */,
+				795451605196DEAFA3C58BD7 /* Pods */,
+				80C9FD673ED1845F1D741EC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BDA27A325BECD900067E2CA /* Build configuration list for PBXNativeTarget "GoldPriceApp" */;
 			buildPhases = (
+				50DCD3E115A53C3E68F97A54 /* [CP] Check Pods Manifest.lock */,
 				8BDA278B25BECD8F0067E2CA /* Sources */,
 				8BDA278C25BECD8F0067E2CA /* Frameworks */,
 				8BDA278D25BECD8F0067E2CA /* Resources */,
+				54F8753B12311AF3CC5733FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50DCD3E115A53C3E68F97A54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldPriceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54F8753B12311AF3CC5733FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoldPriceApp/Pods-GoldPriceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoldPriceApp/Pods-GoldPriceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoldPriceApp/Pods-GoldPriceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BDA278B25BECD8F0067E2CA /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		8BDA27A425BECD900067E2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E567DA541CD2FA1A5DE57090 /* Pods-GoldPriceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		8BDA27A525BECD900067E2CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D74405918A77E2AFE36BF8A /* Pods-GoldPriceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
